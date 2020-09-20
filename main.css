@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Monoton&display=swap');
+
+
+body {
+    margin:0;
+}
+
+header nav {
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 4rem;
+}
+
+nav a {
+    color: white;
+    text-decoration:none;
+    font-size: 1.5rem;
+    margin: 0 3rem;
+    font-family: sans-serif;
+}
+
+
+.content {
+    height:100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, black, slateblue);
+    flex-direction: column;
+}
+
+.content p {
+    color:white;
+    font-family: sans-serif;
+    width:70%;
+    text-align: center;
+}
+.content h1 {
+    color:white;
+    font-size:3rem;
+    font-family: 'Monoton', cursive;
+    font-weight:400;
+    animation-name: fadein;
+    animation-duration: 3s;
+}
+
+
+@keyframes fadein {
+    from {transform:scale(1.1);opacity: 0;}
+    to {transform:scale(1);opacity: 1;}
+}
